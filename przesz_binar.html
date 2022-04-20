@@ -1,0 +1,40 @@
+<DOCKTYPE! html>
+<html>
+    <head>
+        <title>Przeszukiwanie binarne</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header id="header" class="header">
+            <span id="theme_change">
+                <a href="strona.html" class="header_button">Powrót</a>
+            </span>
+            
+            <b style="text-transform:uppercase;">projektowanie oprogramowania</b>
+        </header>
+
+        <div class="title_screen">
+            <span class="title">przeszukiwanie<br>binarne</span>
+        </div>
+
+        <div class="content" id="content">
+            <i>Wyszukiwanie binarne</i> – algorytm opierający się na metodzie dziel i zwyciężaj, który w czasie logarytmicznym stwierdza, czy szukany element znajduje się w uporządkowanej tablicy i jeśli się znajduje, podaje jego indeks. Np. jeśli tablica zawiera milion elementów, wyszukiwanie binarne musi sprawdzić maksymalnie 20 elementów <i>(log<sub>2</sub> 1'000'000 ≈ 20)</i> w celu znalezienia żądanej wartości. Dla porównania wyszukiwanie liniowe wymaga w najgorszym przypadku przejrzenia wszystkich elementów tablicy.
+
+            <i>Zasada działania algorytmu</i>
+            Uporządkowana tablica jest dzielona na coraz mniejsze przedziały do momentu, gdy przedział osiągnie długość jeden, kiedy możemy jednym sprawdzeniem określić, czy element znajduje się w tablicy.
+            <br>
+            W pojedynczym kroku rozważa się jeden przedział charakteryzowany dwoma indeksami: początkowym <i>a</i> i końcowym <i>b</i>. Algorytm rozpoczyna wyszukiwanie od całej tablicy.
+            <br>
+            Następnie wyznaczany jest środek tego przedziału <i>c = [(a + b) / 2]</i>.
+            <br><br>
+            <i>Przedział jest zawężany</i> – dzięki uporządkowaniu danych wiadomo, że albo poszukiwany element może znajdować się w indeksach <i>[a;c]</i> albo za nim. Innymi słowy wybór ogranicza się do przedziału [a,c] gdy poszukiwany element jest mniejszy lub równy zapisanemu pod indeksem <i>c</i>, albo <i>[c + 1,b]</i> w przeciwnym razie.
+        <footer id="footer" class="footer">
+            Kacper Kantarowski 2pr 2022
+        </footer>
+
+    
+
+</body>
+</html>

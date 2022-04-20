@@ -1,0 +1,45 @@
+<DOCKTYPE! html>
+<html>
+    <head>
+        <title>Sortowanie przez wybór</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header id="header" class="header">
+            <span id="theme_change">
+                <a href="strona.html" class="header_button">Powrót</a>
+            </span>
+            
+            <b style="text-transform:uppercase;">projektowanie oprogramowania</b>
+        </header>
+
+        <div class="title_screen">
+            <span class="title">sortowanie<br>przez wybór</span>
+        </div>
+
+        <div class="content" id="content">
+            <i>Sortowanie przez wybór</i> - jedna z prostszych metod sortowania o złożoności <i>O(n<sup>2</sup>)</i>. Polega na wyszukaniu elementu mającego się znaleźć na żądanej pozycji i zamianie miejscami z tym, który jest tam obecnie. Operacja jest wykonywana dla wszystkich indeksów sortowanej tablicy.
+
+            <h4>Działanie algorytmu</h4>
+            <ol>
+                <li>wyszukaj minimalną wartość z tablicy spośród elementów od i do końca tablicy</li>
+                <li>zamień wartość minimalną, z elementem na pozycji i</li>
+            </ol>
+            Gdy zamiast wartości minimalnej wybierana będzie maksymalna, wówczas tablica będzie posortowana od największego do najmniejszego elementu.
+            <br>
+            Algorytm jest niestabilny. Przykładowa lista to: [2a,2b,1] → [1,2b,2a] (gdzie 2b=2a)
+            <h2>Symulacja sortowania</h2>
+            <div class="imgbox">
+                <center><img src="sort_select.gif"></center>
+            </div>
+        </div>
+
+        <footer id="footer" class="footer">
+            Kacper Kantarowski 2pr 2022
+        </footer>
+    
+
+</body>
+</html>
